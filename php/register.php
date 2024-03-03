@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Register</title>
-    <link rel="stylesheet" href="../styles/form-style.css">
+    <link rel="stylesheet" href="../styles/formstyle.css">
 </head>
 <body>
     <div class="container">

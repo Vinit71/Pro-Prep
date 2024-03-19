@@ -1,0 +1,100 @@
+.navbar {
+  position: absolute;
+    top: 0.7rem;
+    left: 0;
+    width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Three columns: 1st for logo, 2nd for links, 3rd for profile */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items evenly along the main axis */
+  color: white;
+  font-size: 20px;
+}
+
+      .logo {
+        color: black;
+        justify-self: start; 
+        padding-left: 1.5rem;
+      }
+
+      .links {
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+      }
+
+      .links a {
+        text-decoration: none;
+        color: white;
+        margin: 0 2rem; /* Add spacing between links */
+      }
+
+      .profile-img {
+        justify-self: end;
+        /* margin-left: 15rem; */
+        border: 2px solid green;
+        border-radius: 50%;
+        width: 2.8rem;
+        height: 2.8rem; 
+    }
+
+     .nav-links:hover {
+        color: red;
+     }
+
+     /* .profile:hover {
+      border-bottom: 2px solid blue;
+     } */
+
+     .profile-img:hover {
+      border: 2px solid blue;
+     }
+
+
+     .menu-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  .menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      top: 50px;
+      margin-right: 0.5rem;
+      right: 0;
+      padding: 5px;
+  }
+  
+  .menu.show {
+      display: block;
+  }
+  
+  .menu a {
+      color: black;
+      font-size: 15px;
+      text-decoration: none;
+      display: block;
+      padding: 5px;
+  }
+
+
+.client-container {
+  /* background-color: blue; */
+  position: absolute;
+  top: 10rem;
+
+  width: 100%;
+}
+
+.table {
+  margin-left: 25%;
+  /* background-color: red; */
+}
+
+td {
+  font-size: larger;
+  padding: 1rem 3rem 1rem 3rem;
+}

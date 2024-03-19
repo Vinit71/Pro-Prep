@@ -9,3 +9,18 @@
     <h1>Health and fitness</h1>
 </body>
 </html>
+
+if (isset($_POST['copy'])) {
+    $plan_id = $_POST['plan_id'];
+    
+    // Insert the selected plan ID into a new column in the database
+    $sql = "INSERT INTO your_table (plan_id) VALUES ('$plan_id')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Plan ID inserted successfully.";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+$conn->close();

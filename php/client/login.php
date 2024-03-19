@@ -4,7 +4,7 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="../styles/formstyle.css">
+    <link rel="stylesheet" href="../../styles/formstyle.css">
     <title>Login</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
                         <!-- php -->
                         <?php 
              
-             include("config.php");
+             include("../config.php");
              if(isset($_POST['submit'])){
                $email = mysqli_real_escape_string($conn,$_POST['email']);
                $password = mysqli_real_escape_string($conn,$_POST['password']);

@@ -4,7 +4,7 @@
 
 <html>
 <head>
-    <link rel="stylesheet" href="../styles/formstyle.css">
+    <link rel="stylesheet" href="../../styles/formstyle.css">
     <title>Login</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 
 <?php 
              
-             include("config.php");
+             include("../config.php");
              if(isset($_POST['submit'])){
                $email = mysqli_real_escape_string($conn,$_POST['email']);
                $password = mysqli_real_escape_string($conn,$_POST['password']);
@@ -35,9 +35,31 @@
         
                }
                if(isset($_SESSION['ok'])){
+                    if($email == 'aarohi93@gmail.com'){     //Yoga
+                        header("Location: ./coach-ids/idxYoga.php");     
+                    }
+                    else if($email == 'surjeet567@gmail.com'){    //Fitness
+                        header("Location: ./coach-ids/idxFitness.php");
+                    }
+                    else if($email == 'Jaxon890@gmail.com'){    //Boxing
+                        header("Location: ./coach-ids/idxBoxing.php");
+                    }
+                    else if($email == 'William567@gmail.com'){    //Calisthenics
+                        header("Location: ./coach-ids/idxCalisthenics.php");
+                    }
+                    else if($email == 'Avnimehta84@gmail.com'){    //Running
+                        header("Location: ./coach-ids/idxRunning.php");
+                    }
+                    else if($email == 'Harper45@gmail.com'){    //Powerlifting
+                        header("Location: ./coach-ids/idxPL.php");
+                    }
+                    
+                    else{
                    header("Location: cIndex.php");
+                    }
                }
-             }else{
+             }
+             else{
 
            
            ?>

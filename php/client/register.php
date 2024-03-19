@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Register</title>
-    <link rel="stylesheet" href="../styles/formstyle.css">
+    <link rel="stylesheet" href="../../styles/formstyle.css">
 </head>
 <body>
     <div class="container">
@@ -10,7 +10,7 @@
 
 <?php
 
-include("config.php");
+include("../config.php");
 
 if(isset($_POST['submit'])){
     //form inputs storing into php variables

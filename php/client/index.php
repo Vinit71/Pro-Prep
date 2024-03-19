@@ -1,7 +1,7 @@
 <?php 
    session_start();
 
-   include("config.php");
+   include("../config.php");
    if(!isset($_SESSION['valid'])){
     header("Location: login.php");
    }
@@ -11,13 +11,13 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../styles/webstyle.css">
+        <link rel="stylesheet" href="../../styles/webstyle.css">
       </head>
     <body>
        
             
         <div id="img-container">
-            <img src="../img/bgImg.jpg" alt="">
+            <img src="../../img/bgImg.jpg" alt="">
         </div>
         
         <div class="navbar">
@@ -30,7 +30,7 @@
           </div>
 
           <div class="profile menu-toggle" onclick="toggleMenu()">
-            <img class="profile-img" src="../img/836.jpg" alt="">
+            <img class="profile-img" src="../../img/836.jpg" alt="">
             <div class="menu" id="menu">
               <a href="#">Profile</a>
               <a href="./logout.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
@@ -43,11 +43,12 @@
 
         <h1>We provide</h1>
         <div class="Home-grid">
-            <div class="grid-item" id="img1"><img src="../img/box1.jpg" alt="Image 1"></div>
-            <div class="grid-item" id="img2"><img src="../img/box1.jpg" alt="Image 2"></div>
-            <div class="grid-item" id="img3"><img src="../img/box1.jpg" alt="Image 3"></div>
-            <div class="grid-item" id="img4"><img src="../img/box1.jpg" alt="Image 4"></div>
-            <div class="grid-item" id="img5"><img src="../img/box1.jpg" alt="Image 5"></div>
+            <a class="grid-item" id="img1" href="./coachSection/yogaCoach.php"><img src="../../img/img-yoga.jpg" alt="Image 5"></a>
+            <a class="grid-item" id="img2" href="./coachSection/fitnessCoach.php"><img src="../../img/img-fitness.jpg" alt="Image 1"></a>
+            <a class="grid-item" id="img3" href="./coachSection/boxingCoach.php"><img src="../../img/img-boxing.jpg" alt="Image 2"></a>
+            <a class="grid-item" id="img4" href="./coachSection/calisthenicsCoach.php"><img src="../../img/img-calisthenics.jpg" alt="Image 3"></a>
+            <a class="grid-item" id="img5" href="./coachSection/runningCoach.php"><img src="../../img/img-running.jpg" alt="Image 4"></a>
+            <a class="grid-item" id="img6" href="./coachSection/plCoach.php"><img src="../../img/img-pl.jpg" alt="Image 5"></a>
           </div>
 
           <div id="about-us">

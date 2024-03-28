@@ -38,7 +38,15 @@ if (isset($_POST['done'])) {
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="../../../styles/webstyle.css">
+    <!-- <link rel="stylesheet" href="../../../styles/clientWebstyle.css"> -->
+    
     <style>
+        *{
+            /* background:green; */
+        }
+        .princing {
+            display: flex;
+        }
         .button-like-form {
             display: inline-block;
             padding: 10px 20px;
@@ -70,7 +78,11 @@ if (isset($_POST['done'])) {
             <li><i class="fas fa-check-circle"></i> ...</li>
             <li><i class="fas fa-times-circle"></i> ...</li>
         </ul>
-        <form method="post">
+        <!-- <form method="post">
+            <input type="hidden" name="plan_id" value="2K">
+            <input type="submit" name="done" value="done" class="button-like-form">
+        </form> -->
+        <form id="pricingForm" method="post">
             <input type="hidden" name="plan_id" value="2K">
             <input type="submit" name="done" value="done" class="button-like-form">
         </form>
@@ -109,6 +121,13 @@ if (isset($_POST['done'])) {
         </form>
     </div>
 </div>
+<script>
+    document.getElementById("pricingForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
 
+        // Change the innerHTML of the pricing class
+        document.querySelector(".pricing").innerHTML = "<p>Thank you for choosing our plan!</p>";
+    });
+</script>
 </body>
 </html>

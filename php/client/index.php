@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../../styles/clientWebstyle.css">
+        <link rel="stylesheet" href="../../styles/clientWebsty.css">
       </head>
     <body>
        
             
         <div id="img-container">
-            <img src="../../img/bgImg.jpg" alt="">
+            <img src="../../img/bgImg3-min.png" alt="">
         </div>
         
         <div class="navbar">
@@ -45,19 +45,18 @@
         <div class="section-wrapper">
         <h1 class="section-heading">We provide</h1>
         <div class="Home-grid">
-            <a class="grid-item" id="img1" href="./coachSection/yogaCoach.php"><img src="../../img/img-yoga.jpg" alt="Image 5"><div class="image-wrapper"><h1>yoga</h1></div></a>
-            <a class="grid-item" id="img2" href="#"><img src="../../img/img-fitness.jpg" alt="Image 1"><div class="image-wrapper"><h1>Fitness</h1></div></a>
-            <a class="grid-item" id="img3" href="#"><img src="../../img/img-boxing.jpg" alt="Image 2"><div class="image-wrapper"><h1>Boxing</h1></div></a>
-            <a class="grid-item" id="img4" href="#"><img src="../../img/img-calisthenics.jpg" alt="Image 3"><div class="image-wrapper"><h1>Calisthenics</h1></div></a>
-            <a class="grid-item" id="img5" href="#"><img src="../../img/img-running.jpg" alt="Image 4"><div class="image-wrapper"><h1>Running</h1></div></a>
-            <a class="grid-item" id="img6" href="#"><img src="../../img/img-pl.jpg" alt="Image 4"><div class="image-wrapper"><h1>Boxing</h1></div></a>
+            <a class="grid-item" id="img1" href="./coachSection/yogaCoach.php"><img src="../../img/Services/yoga-min.jpg" alt="Image 1"><div class="image-wrapper"><h1>yoga</h1></div></a>
+            <a class="grid-item" id="img2" href="./coachSection/fitnessCoach.php"><img src="../../img/Services/stretching-min.jpg" alt="Image 2"><div class="image-wrapper"><h1>Stretching</h1></div></a>
+            <a class="grid-item" id="img3" href="./coachSection/calisthenicsCoach.php"><img src="../../img/Services/calisthenics-min.jpg" alt="Image 3"><div class="image-wrapper"><h1>Calisthenics</h1></div></a>
+            <a class="grid-item" id="img4" href="./coachSection/boxingCoach.php"><img src="../../img/Services/boxing-min.jpg" alt="Image 4"><div class="image-wrapper"><h1>Boxing</h1></div></a>
+            <a class="grid-item" id="img5" href="./coachSection/plCoach.php"><img src="../../img/Services/powerlifting-min.jpg" alt="Image 5"><div class="image-wrapper"><h1>Power Lifting</h1></div></a>
           </div>
         </div>
 
 
         <!-- ------About Us--------- -->
         <div class="section-wrapper">
-          <div class="texture-about"><img src="../../img/texture-about.jpeg" alt="">
+          <div class="texture-about"><img src="../../img/BgTextures/about-texture.jpeg" alt="">
           <div class="main-about">
             <h1 class="section-heading about-intro">About us</h1>
           <div id="about-us">
@@ -79,27 +78,27 @@
               <div class="about-right ">
                 <div class="slideshow-container">
                   <div class="slide fade">
-                    <img src="../../img/a-coaching.jpg" alt="Slide 1">
+                    <img src="../../img/AboutSection/a-coaching.jpg" alt="Slide 1">
                   </div>
 
                   <div class="slide fade">
-                    <img src="../../img/a-hiking.jpg" alt="Slide 2">
+                    <img src="../../img/AboutSection/a-hiking.jpg" alt="Slide 2">
                   </div>
 
                   <div class="slide fade">
-                    <img src="../../img/a-medal.jpg" alt="Slide 3">
+                    <img src="../../img/AboutSection/a-medal.jpg" alt="Slide 3">
                   </div>
 
                   <div class="slide fade">
-                    <img src="../../img/a-run.jpg" alt="Slide 4">
+                    <img src="../../img/AboutSection/a-run.jpg" alt="Slide 4">
                   </div>
 
                   <div class="slide fade">
-                    <img src="../../img/a-team1.jpg" alt="Slide 5">
+                    <img src="../../img/AboutSection/a-team1.jpg" alt="Slide 5">
                   </div>
                   
                   <div class="slide fade">
-                    <img src="../../img/a-transformation.jpg" alt="Slide 6">
+                    <img src="../../img/AboutSection/a-transformation.jpg" alt="Slide 6">
                   </div>
                   <!-- Add more slides as needed -->
           </div>
@@ -142,7 +141,7 @@
 
                 <div class="c-profile" id="c1">
                    <section class="top-card">
-                     <img src="https://www.bolnews.com/wp-content/uploads/2023/11/FotoJet-8-15-635x430.jpg" alt="user picture">
+                     <img src="../../img/Coaches/yoga-coach-img.jpg" alt="user picture">
                    </section>
                
                    <section class="middle-card">
@@ -170,7 +169,7 @@
 
             <div class="c-profile" id="c2">
                    <section class="top-card">
-                     <img src="https://www.bolnews.com/wp-content/uploads/2023/11/FotoJet-8-15-635x430.jpg" alt="user picture">
+                     <img src="../../img/Coaches/stretching-coach-img.jpg" alt="user picture">
                    </section>
                
                    <section class="middle-card">
@@ -184,7 +183,7 @@
                       <span class="fa fa-star checked"></span>
                     </div>
                   </div>
-                     <p>Bodybuilding
+                     <p>Stretching
                       <br>Experence: 12 years
                      </p>
                    </section>
@@ -199,7 +198,7 @@
 
             <div class="c-profile" id="c3">
                    <section class="top-card">
-                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRIZIM_x5_Iv2NtFFpolChjakDbzWPBXT6Q&usqp=CAU" alt="user picture">
+                     <img src="../../img/Coaches/calisthenics-coach-img.jpg" alt="user picture">
                    </section>
                
                    <section class="middle-card">
@@ -228,7 +227,7 @@
 
             <div class="c-profile" id="c4">
               <section class="top-card">
-                <img src="https://www.bolnews.com/wp-content/uploads/2023/11/FotoJet-8-15-635x430.jpg" alt="user picture">
+                <img src="../../img/Coaches/pl-coach-image.jpg" alt="user picture">
               </section>
           
               <section class="middle-card">
@@ -257,7 +256,7 @@
 
             <div class="c-profile" id="c5">
                 <section class="top-card">
-                  <img src="../../img/c-boxing.jpg" alt="user picture">
+                  <img src="../../img/Coaches/boxing-coach-img.jpg" alt="user picture">
                 </section>
               
                 <section class="middle-card">
@@ -300,7 +299,7 @@
 
         <!-- testimonials -->
   <div class="texture-testimonials">
-    <img src="../../img/testimonials/test-background.jpg" alt="">
+    <img src="../../img/BgTextures/testimonials-texture.jpg" alt="">
     <h1 class="section-heading test-intro">Reviews</h1>
     <div class="main-testimonials">
         <div class="review">
@@ -424,5 +423,6 @@
           }
           
       </script>
+
     </body>
 </html>

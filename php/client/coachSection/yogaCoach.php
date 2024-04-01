@@ -37,36 +37,87 @@ if (isset($_POST['done'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../../../styles/webstyle.css">
+    <link rel="stylesheet" href="../../../styles/priceCards.css">
     <!-- <link rel="stylesheet" href="../../../styles/clientWebstyle.css"> -->
-    
-    <style>
-        *{
-            /* background:green; */
-        }
-        .princing {
-            display: flex;
-        }
-        .button-like-form {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
 
-        .button-like-form:hover {
-            background-color: #0056b3;
-        }
+    <style>
+        
+.circle-loader {
+  margin-bottom: 3.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left-color: #5cb85c;
+  animation: loader-spin 1.2s infinite linear;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+}
+
+.load-complete {
+  -webkit-animation: none;
+  animation: none;
+  border-color: #5cb85c;
+  transition: border 500ms ease-out;
+}
+
+.checkmark {
+  display: none;
+}
+
+.checkmark:after {
+  opacity: 1;
+  height: 3.5em;
+  width: 1.75em;
+  border-right: 3px solid #5cb85c;
+  border-bottom: 3px solid #5cb85c;
+  content: '';
+  left: 2.6em;
+  top: 1.2em;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+/* Loader keyframe */
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Checkmark keyframe */
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 1.75em;
+    opacity: 1;
+  }
+  40% {
+    height: 3.5em;
+    width: 1.75em;
+    opacity: 1;
+  }
+  100% {
+    height: 3.5em;
+    width: 1.75em;
+    opacity: 1;
+  }
+}
     </style>
 </head>
 <body>
-<h1>Yoga Coach</h1>
+<div class="serviceName">Yoga Coach</div>
 
+<!-- Cards Section -->
 <div class="pricing">
     <div class="plan">
         <h2>Newbie</h2>
@@ -78,10 +129,7 @@ if (isset($_POST['done'])) {
             <li><i class="fas fa-check-circle"></i> ...</li>
             <li><i class="fas fa-times-circle"></i> ...</li>
         </ul>
-        <!-- <form method="post">
-            <input type="hidden" name="plan_id" value="2K">
-            <input type="submit" name="done" value="done" class="button-like-form">
-        </form> -->
+
         <form id="pricingForm" method="post">
             <input type="hidden" name="plan_id" value="2K">
             <input type="submit" name="done" value="done" class="button-like-form">
@@ -121,13 +169,11 @@ if (isset($_POST['done'])) {
         </form>
     </div>
 </div>
-<script>
-    document.getElementById("pricingForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the form from submitting normally
 
-        // Change the innerHTML of the pricing class
-        document.querySelector(".pricing").innerHTML = "<p>Thank you for choosing our plan!</p>";
-    });
-</script>
+<!-- <div id="loaderContainer">
+  <div class="tickMark"></div>
+</div> -->
+
+<script src="coachSectio.js"></script>
 </body>
 </html>

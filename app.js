@@ -7,6 +7,18 @@
 //     alert("Logging out...");
 //   }
 
+//pre-loader
+// document.addEventListener("DOMContentLoaded", function() {
+//   // Show the preloader
+//   document.querySelector(".preloader").style.display = "block";
+  
+//   // Delay hiding the preloader and showing the content
+//   setTimeout(function() {
+//     document.querySelector(".preloader").style.display = "none";
+//     document.querySelector(".content-pre").style.display = "block";
+//   }, 3000); // 3 seconds delay
+// });
+
 
 // ----Login Toggle----
 function toggleMenu() {

@@ -33,31 +33,15 @@ if (isset($_POST['done'])) {
 
 <html>
 <head>
-    <title>Yoga-Coach</title>
+    <title>PL-Coach</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../../../styles/webstyle.css">
-    <style>
-        .button-like-form {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .button-like-form:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="../../../styles/priceCards.css">
+    
 </head>
 <body>
-<h1>Yoga Coach</h1>
+<div class="serviceName">PL Coach</div>
 
 <div class="pricing">
     <div class="plan">
@@ -110,5 +94,7 @@ if (isset($_POST['done'])) {
     </div>
 </div>
 
+
+<script src="coachSection.js"></script>
 </body>
 </html>

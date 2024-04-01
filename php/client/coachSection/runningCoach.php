@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 session_start();
 include("../../config.php");
 if (!isset($_SESSION['valid'])) {
@@ -33,7 +33,7 @@ if (isset($_POST['done'])) {
 
 <html>
 <head>
-    <title>Yoga-Coach</title>
+    <title>Run(stretching)-Coach</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -57,7 +57,7 @@ if (isset($_POST['done'])) {
     </style>
 </head>
 <body>
-<h1>Yoga Coach</h1>
+<h1>Run(stretching) Coach</h1>
 
 <div class="pricing">
     <div class="plan">
@@ -111,4 +111,4 @@ if (isset($_POST['done'])) {
 </div>
 
 </body>
-</html>
+</html> -->

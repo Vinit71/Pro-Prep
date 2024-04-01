@@ -3,6 +3,9 @@
 /* Logo font */
 @import "https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap";
 
+/* Title font */
+@import "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap";
+
 /* heading font */
 @import "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap";
 
@@ -30,16 +33,155 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#img-container {
+/* Lodaer */
+/* 
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.content-pre {
+  display: none;
+} */
+
+
+
+/* Hero page */
+#hero-page {
+  display: flex;
     position: relative;
     z-index: -1;
 }
 
-#img-container img {
+#hero-page img {
     width: 100%;
     height: auto;
     display: block;
 }
+
+.tagline {
+  position: absolute;
+  z-index: 1;
+  top: 15rem;
+  left: 43rem;
+
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 4rem;
+
+  /* text-shadow: 
+  -2px -2px 0 #000,  
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000;  */
+
+  text-shadow: 2px 2px 4px var(--dark-blue);
+  letter-spacing: 3px;
+  color: var(--white);
+}
+
+  #title-pp {
+    font-weight: 550;
+    text-shadow: none;
+    color: transparent; /* Hide the text color */
+    background-image: linear-gradient(to top, #e23a4a, #f16f96, #eea4d1, #ecd5f3, #ffffff);
+    -webkit-background-clip: text; /* WebKit/Blink browsers */
+    -moz-background-clip: text; /* Firefox */
+    background-clip: text; /* Standard syntax */
+  }
+
+  .arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 92%;
+    /* margin-left: -30px; */
+    bottom: 4rem;
+  }
+  
+  .arrows path {
+    /* stroke: #2994D1; */
+    stroke: var(--white);
+    fill: transparent;
+    stroke-width: 1px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
+
+/* ------Main button------- */
+.cta-btn1{
+  position: absolute;
+  top: 55%;
+  left: 80%;
+  align-items: center;
+  background-color: #fee6e3;
+  color: #111;
+  cursor: pointer;
+  font-size: 16px;
+  height: 42px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+}
+
+
 
 .section-heading {
   font-size: 50px;
@@ -52,10 +194,8 @@ body {
   margin-bottom: 1rem;
   text-align: center;
 }
+
 /* -------Nav--------- */
-
-
-
 .navbar {
   position: fixed;
   top: 0;
@@ -174,23 +314,6 @@ body {
           padding: 5px;
       }
 
-/* ------Main button------- */
-#main-btn{
-  position: absolute;
-  top: 55%;
-  left: 80%;
-  align-items: center;
-  background-color: #fee6e3;
-  color: #111;
-  cursor: pointer;
-  font-size: 16px;
-  height: 42px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-}
-
 .section-wrapper {
   /* background-color: red; */
   height: 100%;
@@ -248,8 +371,6 @@ body {
   width: 100%;
   text-align: center;
   color: #fff;
-  /* background-color: rgba(0, 0, 0, 0.5); black */
-  /* background-color: rgba(255, 255, 255, 0.8); white */
   background-color: rgba(0, 36, 107, 0.9);
   padding: 10px 0;
   margin: 0;
@@ -263,7 +384,6 @@ body {
 }
 
 .image-wrapper h1 {
-  /* background-color: var(--white); */
   color: var(--white);
 }          
           
@@ -319,9 +439,9 @@ body {
 
           .social-handles {
             
-            margin-top: 5rem;
           }
           .social-handle {
+            margin-top: 5rem;
             color: rgba(0, 0, 0, .9);
             font-size: 20px;
             /* margin: 0 0 0 5%; */
@@ -605,9 +725,6 @@ body {
   margin: 50px auto;
   padding: 20px;
 
-  /* background-color: #D0E8F2; */
-  /* background-color: #D4EDDA; */
-  /* background-color: #DEE2E6; */
   background-color: white;
 
 border: 2px solid var(--lighter-blue) ;

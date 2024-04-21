@@ -12,36 +12,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../../styles/clientWebstye.css">
-        <style>
-          .texture-coachProfile {
-  position: relative;
-  z-index: -1;
-}
+        <link rel="stylesheet" href="../../styles/clientWebstyle.css">
 
-.texture-coachProfile img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-        </style>
       </head>
     <body>
        
             
         <div id="img-container">
-            <img src="../../img/bgImg3-min.png" alt="">
+            <img src="../../img/bgImg3-min.webp" alt="">
         </div>
         
         <div class="navbar">
-          <div class="logo"><b>Logo</b></div>
+          <div class="logo">ProPrep</div>
 
           <div class="links">
           <a class="nav-links" href="#">Home</a>
-              <a class="nav-links" href="#">Contact</a>
-              <a class="nav-links" href="#">About</a>
+              <a class="nav-links" href="#contactnav">Contact</a>
+              <a class="nav-links" href="#aboutnav">About</a>
           </div>
+
 
           <div class="profile menu-toggle" onclick="toggleMenu()">
             <img class="profile-img" src="../../img/836.jpg" alt="">
@@ -51,24 +40,33 @@
             </div>
           </div> 
         </div>
+        <div class="tagline">
+              Empower Your Fitness Journey <br>with <span id="title-pp">ProPrep</span>
+            </div>
 
+             <!-- Arrow Animation -->
+             <svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
 <!-- href="php/login.php"><img src="../img/836.jpg" alt=""> -->
-        <button id="main-btn">Get started</button>
+<a class="main-btn" href="#servicesnav">Get Started</a>
 
         <div class="section-wrapper">
-        <h1 class="section-heading">We provide</h1>
+        <h1 id="servicesnav" class="section-heading">We provide</h1>
         <div class="Home-grid">
-            <a class="grid-item" id="img1" href="./coachSection/yogaCoach.php"><img src="../../img/Services/yoga-min.jpg" alt="Image 1"><div class="image-wrapper"><h1>yoga</h1></div></a>
-            <a class="grid-item" id="img2" href="./coachSection/stretchingCoach.php"><img src="../../img/Services/stretching-min.jpg" alt="Image 2"><div class="image-wrapper"><h1>Stretching</h1></div></a>
-            <a class="grid-item" id="img3" href="./coachSection/calisthenicsCoach.php"><img src="../../img/Services/calisthenics-min.jpg" alt="Image 3"><div class="image-wrapper"><h1>Calisthenics</h1></div></a>
-            <a class="grid-item" id="img4" href="./coachSection/boxingCoach.php"><img src="../../img/Services/boxing-min.jpg" alt="Image 4"><div class="image-wrapper"><h1>Boxing</h1></div></a>
-            <a class="grid-item" id="img5" href="./coachSection/powerliftingCoach.php"><img src="../../img/Services/powerlifting-min.jpg" alt="Image 5"><div class="image-wrapper"><h1>Power Lifting</h1></div></a>
+            <a class="grid-item" id="img1" href="./coachSection/yogaCoach.php"><img src="../../img/Services/yoga-min.webp" alt="Image 1"><div class="image-wrapper"><h1>yoga</h1></div></a>
+            <a class="grid-item" id="img2" href="./coachSection/stretchingCoach.php"><img src="../../img/Services/stretching-min.webp" alt="Image 2"><div class="image-wrapper"><h1>Stretching</h1></div></a>
+            <a class="grid-item" id="img3" href="./coachSection/calisthenicsCoach.php"><img src="../../img/Services/calisthenics-min.webp" alt="Image 3"><div class="image-wrapper"><h1>Calisthenics</h1></div></a>
+            <a class="grid-item" id="img4" href="./coachSection/boxingCoach.php"><img src="../../img/Services/boxing-min.webp" alt="Image 4"><div class="image-wrapper"><h1>Boxing</h1></div></a>
+            <a class="grid-item" id="img5" href="./coachSection/powerliftingCoach.php"><img src="../../img/Services/powerlifting-min.webp" alt="Image 5"><div class="image-wrapper"><h1>Power Lifting</h1></div></a>
           </div>
         </div>
 
 
         <!-- ------About Us--------- -->
-        <div class="section-wrapper">
+        <div id="aboutnav" class="section-wrapper">
           <div class="texture-about"><img src="../../img/BgTextures/about-texture.jpeg" alt="">
           <div class="main-about">
             <h1 class="section-heading about-intro">About us</h1>
@@ -91,28 +89,25 @@
               <div class="about-right ">
                 <div class="slideshow-container">
                   <div class="slide fade">
-                    <img src="../../img/AboutSection/a-coaching.jpg" alt="Slide 1">
+                    <img src="../../img/AboutSection/a-coaching.webp" alt="Slide 1">
                   </div>
 
                   <div class="slide fade">
-                    <img src="../../img/AboutSection/a-hiking.jpg" alt="Slide 2">
+                    <img src="../../img/AboutSection/a-hiking.webp" alt="Slide 2">
                   </div>
 
                   <div class="slide fade">
-                    <img src="../../img/AboutSection/a-medal.jpg" alt="Slide 3">
+                    <img src="../../img/AboutSection/a-medal.webp" alt="Slide 3">
                   </div>
 
                   <div class="slide fade">
-                    <img src="../../img/AboutSection/a-run.jpg" alt="Slide 4">
+                    <img src="../../img/AboutSection/a-run.webp" alt="Slide 4">
                   </div>
 
                   <div class="slide fade">
-                    <img src="../../img/AboutSection/a-team1.jpg" alt="Slide 5">
+                    <img src="../../img/AboutSection/a-team1.webp" alt="Slide 5">
                   </div>
-                  
-                  <div class="slide fade">
-                    <img src="../../img/AboutSection/a-transformation.jpg" alt="Slide 6">
-                  </div>
+
                   <!-- Add more slides as needed -->
           </div>
                 
@@ -156,7 +151,7 @@
 
                 <div class="c-profile" id="c1">
                    <section class="top-card">
-                     <img src="../../img/Coaches/yoga-coach-img.jpg" alt="user picture">
+                     <img src="../../img/Coaches/yoga-coach-img.webp" alt="user picture">
                    </section>
                
                    <section class="middle-card">
@@ -184,7 +179,7 @@
 
             <div class="c-profile" id="c2">
                    <section class="top-card">
-                     <img src="../../img/Coaches/stretching-coach-img.jpg" alt="user picture">
+                     <img src="../../img/Coaches/stretching-coach-img.webp" alt="user picture">
                    </section>
                
                    <section class="middle-card">
@@ -213,7 +208,7 @@
 
             <div class="c-profile" id="c3">
                    <section class="top-card">
-                     <img src="../../img/Coaches/calisthenics-coach-img.jpg" alt="user picture">
+                     <img src="../../img/Coaches/calisthenics-coach-img.webp" alt="user picture">
                    </section>
                
                    <section class="middle-card">
@@ -242,7 +237,7 @@
 
             <div class="c-profile" id="c4">
               <section class="top-card">
-                <img src="../../img/Coaches/pl-coach-image.jpg" alt="user picture">
+                <img src="../../img/Coaches/pl-coach-image.webp" alt="user picture">
               </section>
           
               <section class="middle-card">
@@ -271,7 +266,7 @@
 
             <div class="c-profile" id="c5">
                 <section class="top-card">
-                  <img src="../../img/Coaches/boxing-coach-img.jpg" alt="user picture">
+                  <img src="../../img/Coaches/boxing-coach-img.webp" alt="user picture">
                 </section>
               
                 <section class="middle-card">
@@ -300,7 +295,7 @@
               
               <!-- hiring -->
               <div class="c-profile" id="c-hiring"> 
-                <h3>We are hiring..</h3>
+                <h2>We are hiring..</h2>
                 <!-- btn -->
                 <div class="joinBtnWrapper">
                   <a href="./php/coach/cApply.php" class="joinBtn">Join us..</a>
@@ -322,7 +317,7 @@
           <div class="orange-circle">
             <i class="fa-solid fa-quote-right"></i>
           </div>
-          <img src="../../img/testimonials/u-1.jpg" alt="Testimonial">
+          <img src="../../img/testimonials/u-1.webp" alt="Testimonial">
           <div class="content">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lorem sed massa ullamcorper scelerisque.</p>
               <p>- John Doe</p>
@@ -344,7 +339,7 @@
           <div class="orange-circle">
             <i class="fa-solid fa-quote-right"></i>
           </div>
-          <img src="../../img/testimonials/u-3.jpg" alt="Testimonial">
+          <img src="../../img/testimonials/u-3.webp" alt="Testimonial">
           <div class="content">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac lorem sed massa ullamcorper scelerisque.</p>
               <p>- John Doe</p>
@@ -353,33 +348,34 @@
     </div>
   </div>
 
-        <div class="footer">
+  <div id="contactnav" class="footer">
           <div class="container">
-            
-              <div class="row">
 
+            <!-- main-content -->
+              <div class="row"> 
                   <div class="col-lg-4 col-sm-4 col-xs-12">
                     <!-- single-footer#1 -->
-                      <div class="single_footer">
-                          <h4>Services</h4>
+                      <div class="single_footer l1">
+                          <h4>Page Link</h4>
                           <ul class="fotter-ul">
-                              <li><a class="fotter-links" href="#">Home</a></li>
-                              <li><a class="fotter-links" href="#">Gents</a></li>
-                              <li><a class="fotter-links" href="#">Ladies</a></li>
-                              <li><a class="fotter-links" href="#">Type specimen book</a></li>
+                            <li><a class="fotter-links" href="#">Home</a></li>
+                            <li><a  class="fotter-links"href="#">Contact Us</a></li>
+                            <li><a class="fotter-links" href="#">About Us</a></li>
                           </ul>
                       </div>
                   </div><!--- END COL -->
 
                   <div class="col-md-4 col-sm-4 col-xs-12">
                       <div class="single_footer single_footer_address">
-                          <h4>Page Link</h4>
+                          <h4>Services</h4>
                           <ul class="fotter-ul">
-                              <li><a class="fotter-links" href="#">Lorem Ipsum</a></li>
-                              <li><a  class="fotter-links"href="#">Simply dummy text</a></li>
-                              <li><a class="fotter-links" href="#">The printing and typesetting</a></li>
-                              <li><a class="fotter-links" href="#">Standard dummy text</a></li>
-                              <li><a class="fotter-links" href="#">Type specimen book</a></li>
+                            <li><a class="fotter-links" href="#">Yoga</a></li>
+                              <li><a class="fotter-links" href="#">Stretching</a></li>
+                              <li><a class="fotter-links" href="#">Calisthenics</a></li>
+                              <li><a class="fotter-links" href="#">Boxing</a></li>
+                              <li><a class="fotter-links" href="#">Powerlifting</a></li>
+                              <!-- <li><a class="fotter-links" href="#">Standard dummy text</a></li>
+                              <li><a class="fotter-links" href="#">Type specimen book</a></li> -->
                           </ul>
                       </div>
                   </div><!--- END COL -->
@@ -408,7 +404,7 @@
 
               <div class="f-row">
                   <div class="col-lg-12 col-sm-12 col-xs-12">
-                      <p class="copyright">Copyright © 2019 <a href="#">Akdesign</a>.
+                      <p class="copyright">Copyright © 2024 <a href="#">Vinit</a>
                       </p>
                   </div><!--- END COL -->
               </div><!--- END ROW -->
@@ -438,6 +434,36 @@
             setTimeout(showSlides, 3000);
           }
           
+          //Fixed Nav Bar
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.scrollY > 0) {
+  navbar.classList.add('navbar-scrolled');
+  } else {
+  navbar.classList.remove('navbar-scrolled');
+  }
+});
+
+document.querySelector('.nav-links[href="#about"]').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelector('#about').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
+
+document.querySelector('.nav-links[href="#contact"]').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelector('#contact').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
+
+document.querySelector('.main-btn[href="#servicesnav"]').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelector('#servicesnav').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
       </script>
 
     </body>

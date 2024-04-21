@@ -2,9 +2,11 @@
 <html>
 <head>
     <title>Register</title>
-    <link rel="stylesheet" href="../../styles/formstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../styles/formsty.css">
 </head>
 <body>
+<a class="form-to-index" href="../../index.html"><i class="fa-solid fa-arrow-left"></i></a>
     <div class="container">
         <div class="box form-box">
 
@@ -34,7 +36,7 @@ if(isset($_POST['submit'])){
     else{
         mysqli_query($conn, "INSERT INTO users(Username,Email,Gender,Age,Password) VALUES('$username','$email','$gender','$age','$password')") or die("Error");
         
-        echo "<div class= 'message'>
+        echo "<div class= 's-message'>
         <p>Registration Succesfull</p>
         </div> <br>";
         echo "<a href='login.php'><button class='btn'>Login Now</button>";

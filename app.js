@@ -54,3 +54,17 @@ window.addEventListener('scroll', function() {
   navbar.classList.remove('navbar-scrolled');
   }
 });
+
+document.querySelector('.nav-links[href="#about"]').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelector('#about').scrollIntoView({
+      behavior: 'smooth'
+  });
+});
+
+document.querySelector('.nav-links[href="#contact"]').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelector('#contact').scrollIntoView({
+      behavior: 'smooth'
+  });
+});

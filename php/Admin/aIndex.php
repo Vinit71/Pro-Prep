@@ -1,9 +1,9 @@
 <?php 
    session_start();
 
-   include("../../config.php");
-   if(!isset($_SESSION['ok'])){
-    header("Location: cLogin.php");
+   include("../config.php");
+   if(!isset($_SESSION['valid'])){
+    header("Location: aLogin.php");
    }
 ?>
 
@@ -11,7 +11,7 @@
     <head>
         <title></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../../../styles/coaches_index.css">
+        <link rel="stylesheet" href="../../styles/coaches_index.css">
       </head>
       <style>
         .links a {
@@ -44,52 +44,6 @@
           </div> 
     </div>
     
-<?php
-// Check if the connection was successful
-if (mysqli_connect_errno()) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-
-// Fetch data from the table
-$query = mysqli_query($conn, "SELECT * FROM yoga_coach");
-
-if (!$query) {
-  die("Query failed: " . mysqli_error($conn));
-}
-?>
-
-<div class="client-container">
-<div class="table">
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Email</th>
-            <th>Plan</th>
-        </tr>
-
-        <?php
-        while ($row = mysqli_fetch_assoc($query)) {
-            echo "<tr>";
-            echo "<td>" . $row['Id'] . "</td>";
-            echo "<td>" . $row['Username'] . "</td>";
-            echo "<td>" . $row['Age'] . "</td>";
-            echo "<td>" . $row['Gender'] . "</td>";
-            echo "<td>" . $row['Email'] . "</td>";
-            echo "<td>" . $row['Plan'] . "</td>";
-            echo "</tr>";
-        }
-        ?>
-    </table>
-  </div>
-</div>
-
-<?php
-// Close the PHP tags
-mysqli_close($conn);
-?>
 
 
 

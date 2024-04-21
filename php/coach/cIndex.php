@@ -1,3 +1,5 @@
+<!-- //not in use file, as we have separe coach indexes -->
+
 <?php 
    session_start();
 
@@ -45,7 +47,7 @@ while ($row = mysqli_fetch_assoc($query)) {
   echo "<td>Email: " . $row['Email'] . "</td>";
   echo "<td>Password: " . $row['Password'] . "</td>";
   echo "<td>Phone: " . $row['Phone'] . "</td>";
-  echo "<td>Service Offered: " . $row['Sevice_offered'] . "</td>";
+  echo "<td>Service Offered: " . $row['Service_offered'] . "</td>";
   echo "<td>Experience: " . $row['Experience'] . "</td>";
   echo "<td>Additional Note: " . $row['Additional_note'] . "</td>";
   echo "</tr>";

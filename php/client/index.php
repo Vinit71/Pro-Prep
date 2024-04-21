@@ -12,7 +12,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../../styles/clientWebsty.css">
+        <link rel="stylesheet" href="../../styles/clientWebstye.css">
+        <style>
+          .texture-coachProfile {
+  position: relative;
+  z-index: -1;
+}
+
+.texture-coachProfile img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+        </style>
       </head>
     <body>
        
@@ -46,10 +59,10 @@
         <h1 class="section-heading">We provide</h1>
         <div class="Home-grid">
             <a class="grid-item" id="img1" href="./coachSection/yogaCoach.php"><img src="../../img/Services/yoga-min.jpg" alt="Image 1"><div class="image-wrapper"><h1>yoga</h1></div></a>
-            <a class="grid-item" id="img2" href="./coachSection/fitnessCoach.php"><img src="../../img/Services/stretching-min.jpg" alt="Image 2"><div class="image-wrapper"><h1>Stretching</h1></div></a>
+            <a class="grid-item" id="img2" href="./coachSection/stretchingCoach.php"><img src="../../img/Services/stretching-min.jpg" alt="Image 2"><div class="image-wrapper"><h1>Stretching</h1></div></a>
             <a class="grid-item" id="img3" href="./coachSection/calisthenicsCoach.php"><img src="../../img/Services/calisthenics-min.jpg" alt="Image 3"><div class="image-wrapper"><h1>Calisthenics</h1></div></a>
             <a class="grid-item" id="img4" href="./coachSection/boxingCoach.php"><img src="../../img/Services/boxing-min.jpg" alt="Image 4"><div class="image-wrapper"><h1>Boxing</h1></div></a>
-            <a class="grid-item" id="img5" href="./coachSection/plCoach.php"><img src="../../img/Services/powerlifting-min.jpg" alt="Image 5"><div class="image-wrapper"><h1>Power Lifting</h1></div></a>
+            <a class="grid-item" id="img5" href="./coachSection/powerliftingCoach.php"><img src="../../img/Services/powerlifting-min.jpg" alt="Image 5"><div class="image-wrapper"><h1>Power Lifting</h1></div></a>
           </div>
         </div>
 
@@ -135,6 +148,8 @@
 
         <!-- Coaches -->
         <!-- <div class="section-wrapper"> -->
+          <!-- <div class="c-profile-wrapper"> -->
+        <!-- <div class="texture-coachProfile"><img src="../../img/BgTextures/coach-profile-bg.avif" alt=""> -->
         <h1 class="section-heading">Our Team</h1>
         <div id="our-team">
           <div class="coaches">
@@ -281,19 +296,20 @@
                   <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
                   <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
                 </footer>
+              </div>
+              
+              <!-- hiring -->
+              <div class="c-profile" id="c-hiring"> 
+                <h3>We are hiring..</h3>
+                <!-- btn -->
+                <div class="joinBtnWrapper">
+                  <a href="./php/coach/cApply.php" class="joinBtn">Join us..</a>
+                  
+                </div>
+                
+              </div>
             </div>
-
-            <!-- hiring -->
-            <div class="c-profile" id="c-hiring"> 
-              <h3>We are hiring..</h3>
-              <!-- btn -->
-<div class="joinBtnWrapper">
-  <a href="./php/coach/cApply.php" class="joinBtn">Join us..</a>
-  
-</div>
-
-          </div>
-          </div>
+          <!-- </div> -->
         <!-- </div> -->
 
 

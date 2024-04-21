@@ -22,11 +22,13 @@ if (isset($_POST['done'])) {
             VALUES ('$res_id', '$res_Uname', '$res_Email', '$res_Gender', '$res_Age', '$plan_id')";
 
     if ($conn->query($sql) === TRUE) {
-        // echo "Data copied successfully.";
+        echo "Data copied successfully.";
         // header("Location: payment.html");
+        header("Location: ./formSubmission/success.php");
     } else {
         echo "record already exists";
         // echo "Error: " . $sql . "<br>" . $conn->error;
+        header("Location: ./formSubmission/failed.php");
     }
 }
 ?>
@@ -37,7 +39,7 @@ if (isset($_POST['done'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="../../../styles/priceCards.css">
+    <link rel="stylesheet" href="../../../styles/priceCar.css">
     <!-- <link rel="stylesheet" href="../../../styles/clientWebstyle.css"> -->
 
     <style>
@@ -112,10 +114,17 @@ if (isset($_POST['done'])) {
     opacity: 1;
   }
 }
+.features li {
+  padding-top: 15px;
+}
+
+.button-like-form {
+
+}
     </style>
 </head>
 <body>
-<div class="serviceName">Yoga Coach</div>
+<!-- <div class="serviceName">Yoga Coach</div> -->
 
 <!-- Cards Section -->
 <div class="pricing">
@@ -123,16 +132,15 @@ if (isset($_POST['done'])) {
         <h2>Newbie</h2>
         <div class="price">₹2k/month</div>
         <ul class="features">
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-times-circle"></i> ...</li>
+            <li><i class="fas fa-check-circle"></i> Access to Weekly Group Yoga Classes</li>
+            <li><i class="fas fa-check-circle"></i> Monthly Progress Tracking</li>
+            <li><i class="fas fa-check-circle"></i> Yoga Pose Library Access</li>
+            <li><i class="fas fa-check-circle"></i> Monthly Newsletter</li>
+            <li><i class="fas fa-times-circle"></i> Discount on Private Sessions</li>
         </ul>
-
         <form id="pricingForm" method="post">
             <input type="hidden" name="plan_id" value="2K">
-            <input type="submit" name="done" value="done" class="button-like-form">
+            <input type="submit" name="done" value="Buy" class="button-like-form">
         </form>
     </div>
 
@@ -141,15 +149,15 @@ if (isset($_POST['done'])) {
         <h2>Elite</h2>
         <div class="price">₹5k/month</div>
         <ul class="features">
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i clas s="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
+            <li><i class="fas fa-check-circle"></i> Access to Bi-Weekly Group Yoga Classes</li>
+            <li><i class="fas fa-check-circle"></i> Monthly One-on-One Session</li>
+            <li><i class="fas fa-check-circle"></i> Access to Live Workshops</li>
+            <li><i class="fas fa-check-circle"></i> Personalized Yoga Routine</li>
+            <li><i class="fas fa-check-circle"></i> Priority Email Support</li>
         </ul>
         <form method="post">
             <input type="hidden" name="plan_id" value="5K">
-            <input type="submit" name="done" value="done" class="button-like-form">
+            <input type="submit" name="done" value="Buy" class="button-like-form">
         </form>
     </div>
 
@@ -157,23 +165,24 @@ if (isset($_POST['done'])) {
         <h2>Champion</h2>
         <div class="price">₹12k/month</div>
         <ul class="features">
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
-            <li><i class="fas fa-check-circle"></i> ...</li>
+            <li><i class="fas fa-check-circle"></i> Unlimited Group Yoga Classes</li>
+            <li><i class="fas fa-check-circle"></i> Bi-Weekly One-on-One Sessions</li>
+            <li><i class="fas fa-check-circle"></i> Access to Exclusive Events</li>
+            <li><i class="fas fa-check-circle"></i> Customized Diet Plan</li>
+            <li><i class="fas fa-check-circle"></i> 24/7 Priority Support</li>
         </ul>
         <form method="post">
             <input type="hidden" name="plan_id" value="12K">
-            <input type="submit" name="done" value="done" class="button-like-form">
+            <input type="submit" name="done" value="Buy" class="button-like-form">
         </form>
     </div>
 </div>
+
 
 <!-- <div id="loaderContainer">
   <div class="tickMark"></div>
 </div> -->
 
-<script src="coachSectio.js"></script>
+<!-- <script src="coachSectio.js"></script> -->
 </body>
 </html>

@@ -5,7 +5,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="../../styles/formstyle.css">
-    <title>Login</title>
+    <title>Coach-Login</title>
 </head>
 <body>
       <div class="container">
@@ -39,7 +39,7 @@
                         header("Location: ./coach-ids/idxYoga.php");     
                     }
                     else if($email == 'surjeet567@gmail.com'){    //Fitness
-                        header("Location: ./coach-ids/idxFitness.php");
+                        header("Location: ./coach-ids/idxStretching.php");
                     }
                     else if($email == 'Jaxon890@gmail.com'){    //Boxing
                         header("Location: ./coach-ids/idxBoxing.php");
@@ -55,7 +55,8 @@
                     }
                     
                     else{
-                   header("Location: cIndex.php");
+                //    header("Location: cIndex.php");
+                   header("Location: cLogin.php");
                     }
                }
              }

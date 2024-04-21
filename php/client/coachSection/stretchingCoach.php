@@ -18,7 +18,7 @@ if (isset($_POST['done'])) {
     }
 
     $plan_id = $_POST['plan_id'];
-    $sql = "INSERT INTO boxing_coach (Id, Username, Email, Gender, Age, Plan)
+    $sql = "INSERT INTO stretching_coach (Id, Username, Email, Gender, Age, Plan)
             VALUES ('$res_id', '$res_Uname', '$res_Email', '$res_Gender', '$res_Age', '$plan_id')";
 
 if ($conn->query($sql) === TRUE) {
@@ -35,7 +35,7 @@ if ($conn->query($sql) === TRUE) {
 
 <html>
 <head>
-    <title>Boxing-Coach</title>
+    <title>Stretching-Coach</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>

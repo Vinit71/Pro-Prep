@@ -166,9 +166,34 @@ body {
 
 /* ------Main button------- */
 .cta-btn1{
+  appearance: button;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #fff, #f8eedb);
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #482307;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  /* margin: 0; */
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px var(--lighter-blue),0px 2px 2px var(--lighter-blue-6);
+
   position: absolute;
-  top: 55%;
-  left: 80%;
+  top: 46.8%;
+  left: 70%;
   align-items: center;
   background-color: #fee6e3;
   color: #111;
@@ -179,6 +204,16 @@ body {
   line-height: 24px;
   max-width: 100%;
   padding: 0 25px;
+}
+
+.button-83:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+  transform: translateY(0.125rem);
+}
+
+.button-83:focus {
+  box-shadow: rgba(72, 35, 7, .46) 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
 }
 
 
@@ -852,7 +887,7 @@ border: 2px solid var(--lighter-blue) ;
   height: 60px;
   position: absolute;
   right: 7rem;
-  top: 233.2rem;
+  top: 231.7rem;
   width: 60px;
   }
   .subscribe__btn i{transition: all 0.3s ease 0s;}

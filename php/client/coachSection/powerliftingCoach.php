@@ -1,24 +1,34 @@
 <?php
 session_start();
 include("../../config.php");
+
+// Check if user is logged in
 if (!isset($_SESSION['valid'])) {
     header("Location: index.php");
+    exit(); // Stop further execution
 }
 
+// Check if form is submitted
 if (isset($_POST['done'])) {
+    // Get user ID from session
     $id = $_SESSION['id'];
+
+    // Fetch user details from 'users' table
     $query = mysqli_query($conn, "SELECT * FROM users WHERE Id=$id");
+    $result = mysqli_fetch_assoc($query);
 
-    while ($result = mysqli_fetch_assoc($query)) {
-        $res_id = $result['Id'];
-        $res_Uname = $result['Username'];
-        $res_Email = $result['Email'];
-        $res_Gender = $result['Gender'];
-        $res_Age = $result['Age'];
-    }
+    // Assign fetched values to variables
+    $res_id = $result['Id'];
+    $res_Uname = $result['Username'];
+    $res_Email = $result['Email'];
+    $res_Gender = $result['Gender'];
+    $res_Age = $result['Age'];
 
+    // Get selected plan ID from form
     $plan_id = $_POST['plan_id'];
-    $sql = "INSERT INTO boxing_coach (Id, Username, Email, Gender, Age, Plan)
+
+    // Insert user details into 'powerlifting_coach' table
+    $sql = "INSERT INTO powerlifting_coach (Id, Username, Email, Gender, Age, Plan)
             VALUES ('$res_id', '$res_Uname', '$res_Email', '$res_Gender', '$res_Age', '$plan_id')";
 
 if ($conn->query($sql) === TRUE) {
@@ -35,7 +45,7 @@ if ($conn->query($sql) === TRUE) {
 
 <html>
 <head>
-    <title>Boxing-Coach</title>
+    <title>Powerlifting-Coach</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
           integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>

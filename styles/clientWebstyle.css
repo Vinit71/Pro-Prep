@@ -33,6 +33,15 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48.3rem;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is behind the title */
+}
 
 #img-container {
     /* position: relative; */
@@ -107,7 +116,8 @@ body {
       }
 
       .nav-links:hover {
-        color: red;        
+        /* color: red;         */
+        border-bottom: 2px solid white;
      }
 
       /*without login profile --> .profile-0 */
@@ -177,13 +187,14 @@ body {
 /* ------Main button------- */
 .main-btn{
   position: absolute;
-  top: 51.4%;
-  left: 70%;
+  top: 60%;
+  left: 46%;
   z-index: 3;
   text-decoration: none;
+  letter-spacing: 2px;
 
-  background: #FF4742;
-  border: 1px solid #FF4742;
+  background: var(--dark-blue);
+  border: 1px solid var(--white);
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -191,8 +202,8 @@ body {
   cursor: pointer;
   display: inline-block;
   font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 16px;
   min-height: 40px;
   outline: 0;
@@ -207,8 +218,9 @@ body {
 }
 
 .main-btn:hover {
-  background-color: #FFFFFF;
-  color: #FF4742;
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
 }
 
 .main-btn:active {
@@ -219,8 +231,8 @@ body {
 .tagline {
   position: absolute;
   z-index: 2;
-  top: 17rem;
-  left: 43rem;
+  top: 18rem;
+  left: 13rem;
 
   font-family: "Bebas Neue", sans-serif;
   font-size: 4rem;
@@ -233,8 +245,15 @@ body {
 #title-pp {
   font-weight: 550;
   text-shadow: none;
+    text-shadow: 
+-2px -2px 0 #000,  
+2px -2px 0 #000,
+-2px 2px 0 #000,
+2px 2px 0 #000; 
+  
   color: transparent; /* Hide the text color */
-  background-image: linear-gradient(to top, #e23a4a, #f16f96, #eea4d1, #ecd5f3, #ffffff);
+  /* background-image: linear-gradient(to top, #e23a4a, #f16f96, #eea4d1, var(--lighter-blue), var(--dark-blue)); */
+  color: yellow;
   -webkit-background-clip: text; /* WebKit/Blink browsers */
   -moz-background-clip: text; /* Firefox */
   background-clip: text; /* Standard syntax */

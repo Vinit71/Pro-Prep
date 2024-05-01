@@ -45,12 +45,21 @@ body {
     height: auto;
     display: block;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48.3rem;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is behind the title */
+}
 
 .tagline {
   position: absolute;
   z-index: 1;
-  top: 15rem;
-  left: 43rem;
+  top: 18rem;
+  left: 13rem;
 
   font-family: "Bebas Neue", sans-serif;
   font-size: 4rem;
@@ -69,8 +78,15 @@ body {
   #title-pp {
     font-weight: 550;
     text-shadow: none;
+      text-shadow: 
+  -2px -2px 0 #000,  
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  2px 2px 0 #000; 
+    
     color: transparent; /* Hide the text color */
-    background-image: linear-gradient(to top, #e23a4a, #f16f96, #eea4d1, #ecd5f3, #ffffff);
+    /* background-image: linear-gradient(to top, #e23a4a, #f16f96, #eea4d1, var(--lighter-blue), var(--dark-blue)); */
+    color: yellow;
     -webkit-background-clip: text; /* WebKit/Blink browsers */
     -moz-background-clip: text; /* Firefox */
     background-clip: text; /* Standard syntax */
@@ -83,6 +99,7 @@ body {
     left: 92%;
     /* margin-left: -30px; */
     bottom: 4rem;
+    color: var(--dark-blue);
   }
   
   .arrows path {
@@ -125,47 +142,6 @@ body {
     -webkit-animation-delay:0s; /* Safari 和 Chrome */
   }
 
-/* ------Main button------- */
-.main-btn{
-  margin-top: 1.2rem;
-  position: absolute;
-  top: 48%;
-  left: 70%;
-  z-index: 1;
-  text-decoration: none;
-
-  background: #FF4742;
-  border: 1px solid #FF4742;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 16px;
-  min-height: 40px;
-  outline: 0;
-  padding: 12px 14px;
-  text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-}
-
-.main-btn:hover {
-  background-color: #FFFFFF;
-  color: #FF4742;
-}
-
-.main-btn:active {
-  opacity: .5;
-}
 
 .section-heading {
   font-size: 50px;
@@ -254,8 +230,9 @@ body {
     
        .nav-links:hover {
           /* color: var(--lighter-blue); */
-          color: red;
-          /* box-shadow: white 0px 5px 15px; */
+          /* color: red; */
+          /* box-shadow: inset 0px -5px 15px white; */
+          border-bottom: 2px solid white;
           
        }
      
@@ -301,12 +278,13 @@ body {
       /* ------Main button------- */
 .main-btn{
   position: absolute;
-  top: 46.7%;
-  left: 68%;
+  top: 60%;
+  left: 46%;
   z-index: 1;
-
-  background: #FF4742;
-  border: 1px solid #FF4742;
+  text-decoration: none;
+  letter-spacing: 2px;
+  background: var(--dark-blue);
+  border: 1px solid var(--white);
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -314,8 +292,8 @@ body {
   cursor: pointer;
   display: inline-block;
   font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 16px;
   min-height: 40px;
   outline: 0;
@@ -330,8 +308,9 @@ body {
 }
 
 .main-btn:hover {
-  background-color: #FFFFFF;
-  color: #FF4742;
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
 }
 
 .main-btn:active {

@@ -12,14 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../../styles/clientWebstyle.css">
+        <link rel="stylesheet" href="../../styles/clientwebstyle.css">
 
       </head>
     <body>
        
-            
+    <div class="overlay"></div>
         <div id="img-container">
-            <img src="../../img/bgImg3-min.webp" alt="">
+            <img src="../../img/hero.webp" alt="">
         </div>
         
         <div class="navbar">
@@ -41,7 +41,7 @@
           </div> 
         </div>
         <div class="tagline">
-              Empower Your Fitness Journey <br>with <span id="title-pp">ProPrep</span>
+              Empower Your Fitness Journey with <span id="title-pp">ProPrep</span>
             </div>
 
              <!-- Arrow Animation -->
